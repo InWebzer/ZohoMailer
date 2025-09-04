@@ -269,7 +269,7 @@ init_head(); ?>
 <div class="text-center text-muted small" style="padding:15px; margin-top:30px; border-top:1px solid #eee;">
   &copy; <?= date('Y'); ?> InWebzer Solutions. All Rights Reserved.  
   <br>
-  <a href="<a href="https://github.com/your-username/zohomailer/issues/new?template=support.yml"" target="_blank">Support</a> | 
+  <a href="https://github.com/InWebzer/ZohoMailer/issues/new?template=support.yml" target="_blank">Support</a> | 
   <a href="https://github.com/InWebzer/ZohoMailer" target="_blank">Documentation</a> | 
   <a href="https://inwebzer.com/" target="_blank">Website</a>
 </div>
@@ -282,5 +282,6 @@ init_head(); ?>
 
 
 <?php init_tail(); ?>
+
 
 
