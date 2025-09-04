@@ -45,9 +45,9 @@ It is designed to replace or extend Perfex’s default email functionality with 
 
 ---
 
-## 📂 Repository Structure
+## 📂 Module Structure
 ```
-zohomailer/
+zohomailer/ # Actual Perfex module
 ├── zohomailer.php # Main module file
 ├── install.php # Install script
 ├── controllers/ # Controllers (admin pages)
@@ -90,6 +90,7 @@ This project is licensed under the **GNU General Public License v3.0 (GPLv3)** �
 
 © 2025 InWebzer Solutions.  
 ZohoMailer is not affiliated with or endorsed by Zoho Corporation.
+
 
 
 
