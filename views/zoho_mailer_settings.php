@@ -52,7 +52,7 @@ init_head(); ?>
        alt="ZohoMailer Logo" height="55" style="margin-bottom:10px;">
   <h3 style="margin:0; font-weight:600;">ZohoMailer for Perfex CRM</h3>
   <p class="text-muted" style="margin:5px 0 0;">
-      <strong>Version:</strong> <?= defined('ZOHOMAILER_MODULE_VERSION') ? ZOHOMAILER_MODULE_VERSION : '1.0.0' ?>  
+      <strong>Version:</strong> <?= defined('ZOHOMAILER_MODULE_VERSION') ? ZOHOMAILER_MODULE_VERSION : '1.2.1' ?>  
       | <strong>Author:</strong> InWebzer Solutions
   </p>
 </div>
@@ -279,5 +279,6 @@ init_head(); ?>
         ajaxUrl: <?= json_encode(admin_url('zohomailer/update_option_ajax')) ?>
     };
 </script>
+
 
 <?php init_tail(); ?>
