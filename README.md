@@ -16,8 +16,8 @@ It is designed to replace or extend Perfex’s default email functionality with 
 - 🔄 **Fallback option** to default email if Zoho fails.  
 - 🛠 Easy-to-use **settings page** inside Perfex CRM.  
 - 📊 Logging & error tracking (`zohomailer/logs/`).  
-- 🎨 Clean UI with module header (logo, version, author).  
-- 📱 Mobile-friendly design for settings page.  
+- 🎨 Clean UI with steps seperated in sections.  
+- 📱 Test email sending before enabling.  
 
 ---
 
@@ -87,4 +87,5 @@ This project is licensed under the **GNU General Public License v3.0 (GPLv3)** �
 
 © 2025 InWebzer Solutions.  
 ZohoMailer is not affiliated with or endorsed by Zoho Corporation.
+
 
