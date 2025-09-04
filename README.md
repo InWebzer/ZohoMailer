@@ -35,7 +35,7 @@ It is designed to replace or extend Perfex’s default email functionality with 
 ## ⚙️ Configuration
 
 1. Copy **Hopepage URL and Authorized Redirect URL** from Step 0.
-2. Go to [Zoho API Console](https://api-console.zoho.com/) and create an app and enter Copied **Hopepage URL and Authorized Redirect URL**.
+2. Go to [Zoho API Console](https://api-console.zoho.com/) and create an app and enter copied **Hopepage URL and Authorized Redirect URL**.
 3. Obtain **Client ID, Client Secret** from [Zoho API Console](https://api-console.zoho.com/).  
 4. Enter them in the **ZohoMailer Settings page** in Step 1.
 5. Select domain where your zoho account is hosted, enter Zoho authorized from email, from name, save credentials.
@@ -90,6 +90,7 @@ This project is licensed under the **GNU General Public License v3.0 (GPLv3)** �
 
 © 2025 InWebzer Solutions.  
 ZohoMailer is not affiliated with or endorsed by Zoho Corporation.
+
 
 
 
