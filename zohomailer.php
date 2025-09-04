@@ -35,7 +35,7 @@ define('ZOHOMAILER_MODULE_NAME', 'zohomailer');
 }
 
 if (!defined('ZOHOMAILER_MODULE_VERSION')) {
-    define('ZOHOMAILER_MODULE_VERSION', '1.1.0');
+    define('ZOHOMAILER_MODULE_VERSION', '1.2.1');
 }
 
 
@@ -300,5 +300,6 @@ hooks()->add_filter('module_' . ZOHOMAILER_MODULE_NAME . '_action_links', functi
     $actions[] = '<a href="' . admin_url('zohomailer/settings') . '">' . _l('settings') . '</a>';
     return $actions;
 }, 10, 1);
+
 
 
