@@ -74,6 +74,15 @@ See [CHANGELOG.md](CHANGELOG.md) for full version history.
 
 ---
 
+## 🆘 Support
+
+If you face any issues or need help with **ZohoMailer**, please use our GitHub Support Form.  
+The form automatically includes your **ZohoMailer version** and **Perfex CRM version** when accessed from the module settings page.
+
+👉 [Open a Support Request](https://github.com/InWebzer/ZohoMailer/issues/new?template=support.yml) or 📩 Email us at developer@inwebzer.com
+
+---
+
 ## 🤝 Contributing
 
 Contributions are welcome!  
@@ -90,6 +99,7 @@ This project is licensed under the **GNU General Public License v3.0 (GPLv3)** �
 
 © 2025 InWebzer Solutions.  
 ZohoMailer is not affiliated with or endorsed by Zoho Corporation.
+
 
 
 
