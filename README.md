@@ -65,9 +65,8 @@ See [CHANGELOG.md](CHANGELOG.md) for full version history.
 ## 🚀 Roadmap
 
 - [ ] Multi-account support  
-- [ ] OAuth auto-refresh for tokens  
-- [ ] Advanced email logging UI  
-- [ ] Testing suite  
+- [ ] Filter to route email sending.  
+- [ ] Advanced email logging UI    
 
 ---
 
@@ -87,5 +86,6 @@ This project is licensed under the **GNU General Public License v3.0 (GPLv3)** �
 
 © 2025 InWebzer Solutions.  
 ZohoMailer is not affiliated with or endorsed by Zoho Corporation.
+
 
 
