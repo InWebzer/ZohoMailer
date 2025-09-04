@@ -1,0 +1,78 @@
+name: Support Request
+description: Ask for help with ZohoMailer configuration or usage.
+title: "[Support]: "
+labels: ["support", "question"]
+assignees:
+  - PriteshKSrivastava
+body:
+  - type: markdown
+    attributes:
+      value: |
+        🙏 Thanks for reaching out! Please provide details about your issue below.
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact (optional)
+      description: How can we reach you if we need more info?
+      placeholder: ex. email@example.com
+
+  - type: dropdown
+    id: zohomailer-version
+    attributes:
+      label: ZohoMailer Version
+      description: Which version of ZohoMailer are you using?
+      options:
+        - 1.2.1 (Latest)
+        - 1.2.0
+        - 1.1.0
+        - 1.0.0
+      default: 0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: Where is the module installed?
+      options:
+        - Perfex CRM (latest)
+        - Perfex CRM (older version)
+        - Other CRM (please specify in details)
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: Describe your issue
+      description: What problem are you facing while using ZohoMailer?
+      placeholder: Please explain clearly.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: If possible, list steps to reproduce the issue.
+      placeholder: 1. Go to settings → 2. Try sending email → 3. Error message appears
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Paste any error logs (from `logs/` folder). This will be formatted as code.
+      render: shell
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Confirmation
+      description: Please confirm before submitting.
+      options:
+        - label: I have searched existing issues to avoid duplicates
+          required: true
+        - label: I agree to follow this project's Code of Conduct
+          required: true
