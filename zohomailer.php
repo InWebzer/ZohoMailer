@@ -22,11 +22,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 /*
 Module Name: ZohoMailer
 Description: Perfex CRM Module to send mail using Zoho API with fallback to system mailer.
-Version: 1.1.0
+Version: 1.2.1
 Author: InWebzer Solutions
-Author URI: https://inwebzer.com
-License: GPL-2.0-or-later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Author URI: https://github.com/InWebzer
+License: GPL-3.0
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Requires PHP: 8.0
 Requires Perfex: 3.*
 */
@@ -300,4 +300,5 @@ hooks()->add_filter('module_' . ZOHOMAILER_MODULE_NAME . '_action_links', functi
     $actions[] = '<a href="' . admin_url('zohomailer/settings') . '">' . _l('settings') . '</a>';
     return $actions;
 }, 10, 1);
+
 
