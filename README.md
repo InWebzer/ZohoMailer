@@ -11,7 +11,7 @@ It is designed to replace or extend Perfex’s default email functionality with 
 
 ## ✨ Features
 
-- 📩 Send emails directly via Zoho Mail API.  
+- 📩 Send all emails directly via Zoho Mail API.  
 - 📎 Full **attachment support**.  
 - 🔄 **Fallback option** to default email if Zoho fails.  
 - 🛠 Easy-to-use **settings page** inside Perfex CRM.  
@@ -28,16 +28,20 @@ It is designed to replace or extend Perfex’s default email functionality with 
 3. Go to **Setup → Modules** in Perfex admin.  
 4. Activate **ZohoMailer**.  
 5. Configure Zoho API credentials under:  
-**Setup → Settings → ZohoMailer**.  
+**Setup → ZohoMailer Settings**.  
 
 ---
 
 ## ⚙️ Configuration
 
-1. Obtain **Client ID, Client Secret, and Refresh Token** from [Zoho API Console](https://api-console.zoho.com/).  
-2. Enter them in the **ZohoMailer Settings page**.  
-3. Optionally, enable **Fallback Mode** → uses default Perfex mail if Zoho fails.  
-4. Save settings and test by sending a sample email.  
+1. Copy **Hopepage URL and Authorized Redirect URL** from Step 0.
+2. Go to [Zoho API Console](https://api-console.zoho.com/) and create an app and enter Copied **Hopepage URL and Authorized Redirect URL**.
+3. Obtain **Client ID, Client Secret** from [Zoho API Console](https://api-console.zoho.com/).  
+4. Enter them in the **ZohoMailer Settings page** in Step 1.
+5. Select domain where your zoho account is hosted, enter Zoho authorized from email, from name, save credentials.
+6. Authorize Zoho in Step 2.
+7. Test Configurations by sending test email before enablig system emails to use ZohoMailer in Step 3.
+8. Enable ZohoMailer and optionally, enable **Fallback to System Mailer** → uses default Perfex mail if Zoho fails.
 
 ---
 
@@ -86,6 +90,7 @@ This project is licensed under the **GNU General Public License v3.0 (GPLv3)** �
 
 © 2025 InWebzer Solutions.  
 ZohoMailer is not affiliated with or endorsed by Zoho Corporation.
+
 
 
 
