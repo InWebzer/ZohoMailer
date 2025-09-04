@@ -127,9 +127,9 @@ register_deactivation_hook(ZOHOMAILER_MODULE_NAME, 'zohomailer_deactivate_module
 function zohomailer_deactivate_module()
 {
     try {
-        // Remove stored credentials and flags. This is intentional on deactivate.
-        delete_option('zoho_enabled'); // 0 = disabled, 1 = enabled
-        delete_option('zoho_fallback'); // 0 = no fallback, 1 = fallback to system mailer
+        // Update stored credentials and flags. This is intentional on deactivate.
+        update_option('zoho_enabled', '0'); // 0 = disabled, 1 = enabled
+        update_option('zoho_fallback', '0'); // 0 = no fallback, 1 = fallback to system mailer
     } catch (Throwable $e) {
         log_message('error', '[ZohoMailer] Deactivation error: ' . $e->getMessage());
     }
@@ -142,27 +142,16 @@ function zohomailer_deactivate_module()
 register_uninstall_hook(ZOHOMAILER_MODULE_NAME, 'zohomailer_uninstall_module');
 function zohomailer_uninstall_module()
 {
-        // Delete all options created by this module
-        $options = [
-            'zoho_client_id',
-            'zoho_client_secret',
-            'zoho_from_address',
-            'zoho_access_token',
-            'zoho_refresh_token',
-            'zoho_account_id',
-            'zoho_token_expires',
-            'zoho_from_name',
-            'zoho_enabled',
-            'zoho_fallback',
-            'zoho_domain',
-        ];
-
-    try {
-        foreach ($options as $opt) {
-            delete_option($opt);
+        try {
+        // Uninstaller script should be responsible for deleting DB tables/options
+        $uninstall_file = __DIR__ . '/uninstall.php';
+        if (file_exists($uninstall_file)) {
+            require_once $uninstall_file;
+        } else {
+            log_message('error', '[ZohoMailer] install.php not found during activation.');
         }
     } catch (Throwable $e) {
-        log_message('error', '[ZohoMailer] Uninstall error: ' . $e->getMessage());
+        log_message('error', '[ZohoMailer] Activation error: ' . $e->getMessage());
     }
 }
 
@@ -300,6 +289,7 @@ hooks()->add_filter('module_' . ZOHOMAILER_MODULE_NAME . '_action_links', functi
     $actions[] = '<a href="' . admin_url('zohomailer/settings') . '">' . _l('settings') . '</a>';
     return $actions;
 }, 10, 1);
+
 
 
 
